@@ -22,6 +22,10 @@ public class Student {
 	@Column 
 	private String mobileNumber;
 	
+	public Student() {
+		super();
+	}
+	
 	public Student(String name, String city, String mobileNumber) {
 		super();
 		this.name = name;
@@ -57,7 +61,7 @@ public class Student {
 		return mobileNumber;
 	}
 
-	public void setAdharNumber(String adharNumber) {
+	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
 }
 
